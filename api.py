@@ -8,7 +8,6 @@ app = FastAPI()
 
 class ChatRequest(BaseModel):
     human_message: str
-    history: list[str]
 
 
 @app.get("/")
